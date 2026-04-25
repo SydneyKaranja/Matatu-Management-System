@@ -1,0 +1,114 @@
+# ─────────────────────────────────────────
+#  .gitignore — Matatu Management System
+#  C++ / Code::Blocks project
+# ─────────────────────────────────────────
+
+
+# ── Compiled binaries and object files ──
+*.exe
+*.out
+*.o
+*.obj
+*.a
+*.lib
+*.dll
+*.so
+*.dylib
+
+# Specific compiled output for this project
+matatu
+matatu.exe
+matatu_test
+matatu_test.exe
+
+
+# ── Code::Blocks project files ──────────
+# Keep .cbp (project file) if you want teammates to open the project easily.
+# Ignore the rest — they are auto-generated and machine-specific.
+*.depend
+*.layout
+*.cbTemp
+
+# Code::Blocks workspace (optional: remove the ! line to ignore .cbp too)
+# *.cbp
+
+
+# ── Build directories ───────────────────
+bin/
+obj/
+build/
+debug/
+release/
+Debug/
+Release/
+
+
+# ── OS-generated junk ───────────────────
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Linux
+*~
+.directory
+
+
+# ── Editor / IDE files ──────────────────
+
+# Visual Studio Code
+.vscode/
+*.code-workspace
+
+# CLion / JetBrains
+.idea/
+cmake-build-*/
+
+# Visual Studio
+.vs/
+*.vcxproj
+*.vcxproj.filters
+*.sln
+*.suo
+*.user
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim / Neovim
+*.swp
+*.swo
+[._]*.s[a-v][a-z]
+[._]*.sw[a-p]
+
+
+# ── Logs and temporary files ─────────────
+*.log
+*.tmp
+*.bak
+*.orig
+*.rej
+
+
+# ── C++ / compiler artifacts ─────────────
+*.dSYM/
+*.su
+*.idb
+*.pdb
+*.map
+*.ilk
+
+
+# ── Packaging ────────────────────────────
+*.zip
+*.tar.gz
+*.rar

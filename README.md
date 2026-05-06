@@ -1,42 +1,36 @@
-\# Nairobi Matatu Management System — Thika Road (Route 45)
-
-
+# Nairobi Matatu Management System — Thika Road (Route 45)
 
 A C++ console application that simulates a public transport management system for matatus operating along \*\*Thika Road\*\*, Nairobi. Built as a demonstration of four core data structures working together in a real-world Kenyan context.
 
+Developed as a Data Structures assignment — University project, Kenya context.
 
+---
+## Group Members
 
-\---
+**Sydney Karanja** - SCT221-0212/2024
+**Nyambura Baraka Mugu** - SCT221-0320/2024
+**Collins Oboka** - SCT221-0105/2024 
 
-
-
-\## Data Structures Used
-
+## Data Structures Used
 
 
 | Data Structure | Role in System |
 
 |---|---|
 
-| \*\*Queue\*\* (`std::queue`) | Passengers waiting at a stage board in FIFO order |
+| **Queue** (`std::queue`) | Passengers waiting at a stage board in FIFO order |
 
-| \*\*Stack\*\* (`std::stack`) | Route history for the matatu driver; supports backtracking when roads close |
+| **Stack** (`std::stack`) | Route history for the matatu driver; supports backtracking when roads close |
 
-| \*\*Tree\*\* (custom `TreeNode`) | Hierarchical fare structure: County → Hub → Route → Stage |
+| **Tree** (custom `TreeNode`) | Hierarchical fare structure: County → Hub → Route → Stage |
 
-| \*\*Graph\*\* (adjacency list + Dijkstra) | Stage network; finds shortest km path between any two stages |
+| **Graph** (adjacency list + Dijkstra) | Stage network; finds shortest km path between any two stages |
 
+---
 
+## Route Coverage
 
-\---
-
-
-
-\## Route Coverage
-
-
-
-This version covers \*\*Thika Road (Route 45)\*\* only:
+This version covers **Thika Road (Route 45)** only:
 
 
 
@@ -50,59 +44,41 @@ Toll → Kenyatta Road → Juja → Witeithe → Thika → Makongeni
 
 ```
 
-
-
 Stages outside this route are rejected gracefully with an error message — the program will not crash.
 
+---
 
-
-\---
-
-
-
-\## Features
+## Features
 
 
 
-\- \*\*Boarding stage selection\*\* is required before any other feature can be used
+\- **Boarding stage selection** is required before any other feature can be used
 
-\- \*\*Passenger Queue\*\* — add passengers, board them FIFO, view the queue
+\- **Passenger Queue** — add passengers, board them FIFO, view the queue
 
-\- \*\*Route History (Stack)\*\* — mark stages visited, backtrack from a stage
+\- **Route History (Stack)** — mark stages visited, backtrack from a stage
 
-\- \*\*Fare Lookup (Tree)\*\* — calculates trip fare relative to your boarding stage
+\- **Fare Lookup (Tree)** — calculates trip fare relative to your boarding stage
 
-\- \*\*Shortest Path (Graph)\*\* — Dijkstra's algorithm returns the shortest route in km
+\- **Shortest Path (Graph)** — Dijkstra's algorithm returns the shortest route in km
 
-\- \*\*Input validation\*\* — all invalid stages and bad inputs are caught without crashing
+\- **Input validation** — all invalid stages and bad inputs are caught without crashing
 
-\- \*\*Change boarding stage\*\* — resets the queue and updates all stage-aware features
+\- **Change boarding stage** — resets the queue and updates all stage-aware features
 
+---
 
+## Getting Started
 
-\---
+### Requirements
 
+\- **IDE:** \[Code::Blocks](https://www.codeblocks.org/) (recommended) or any C++11-capable compiler
 
+\- **Compiler:** GCC / MinGW with C++11 support
 
-\## Getting Started
+\- **OS:** Windows, Linux, or macOS
 
-
-
-\### Requirements
-
-
-
-\- \*\*IDE:\*\* \[Code::Blocks](https://www.codeblocks.org/) (recommended) or any C++11-capable compiler
-
-\- \*\*Compiler:\*\* GCC / MinGW with C++11 support
-
-\- \*\*OS:\*\* Windows, Linux, or macOS
-
-
-
-\### Building in Code::Blocks
-
-
+### Building in Code::Blocks
 
 1\. Open Code::Blocks
 
@@ -120,9 +96,7 @@ Stages outside this route are rejected gracefully with an error message — the 
 
 5\. Press \*\*F9\*\* (Build and Run)
 
-
-
-\### Building from the terminal
+### Building from the terminal
 
 
 
@@ -134,23 +108,15 @@ g++ -std=c++11 -Wall -o matatu matatu\_system.cpp
 
 ```
 
+---
 
-
-\---
-
-
-
-\## How to Use
-
-
+## How to Use
 
 1\. \*\*Launch the program\*\* — you will be prompted to enter your boarding stage first
 
 2\. \*\*Type a valid stage name\*\* (case-insensitive, e.g. `juja`, `Garden City`, `CBD`)
 
 3\. \*\*Select from the main menu:\*\*
-
-
 
 ```
 
@@ -170,11 +136,7 @@ g++ -std=c++11 -Wall -o matatu matatu\_system.cpp
 
 ```
 
-
-
-\### Example session
-
-
+### Example session
 
 ```
 
@@ -204,11 +166,7 @@ Trip fare (Roysambu → Thika): KES 80
 
 \---
 
-
-
-\## Project Structure
-
-
+## Project Structure
 
 ```
 
@@ -222,15 +180,9 @@ matatu-system/
 
 ```
 
+---
 
-
-\---
-
-
-
-\## Future Improvements
-
-
+## Future Improvements
 
 \- Add more routes (Ngong Road, Jogoo Road, Langata Road)
 
@@ -239,16 +191,3 @@ matatu-system/
 \- Add vehicle scheduling across multiple matatus
 
 \- GUI front-end using Qt or a web interface
-
-
-
-\---
-
-
-
-\## Author
-
-
-
-Developed as a Data Structures assignment — University project, Kenya context.
-

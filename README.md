@@ -9,7 +9,7 @@ Developed as a Data Structures assignment — University project, Kenya context.
 
 **Sydney Karanja** - SCT221-0212/2024
 **Nyambura Baraka Mugu** - SCT221-0320/2024
-**Collins Oboka** - SCT221-0105/2024 
+**Arnold Mosoti** - SCT221-0353/2024 
 
 ## Data Structures Used
 
